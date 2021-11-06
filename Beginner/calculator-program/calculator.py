@@ -1,3 +1,4 @@
+#importing clear function
 import os
 def clearConsole():
     command = 'clear'
@@ -8,6 +9,7 @@ clearConsole()
 
 from art import logo
 
+#functions for caluclation
 def add(n1, n2):
   return n1 + n2
 
@@ -45,6 +47,7 @@ def calculator():
     if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ") == 'y':
       num1 = answer
     else:
+      #we want the user to have fresh calculation   
       should_continue = False
       clearConsole()
       calculator()

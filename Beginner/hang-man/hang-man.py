@@ -1,10 +1,10 @@
-# 1. import the require files
-import random
+# importing require files
 
+import random
 from hangman_words import word_list
 from hangman_art import stages, logo
 
-# 2. create a require variables for hangman game
+#creating variables
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 end_of_game = False
@@ -12,14 +12,14 @@ lives = 6
 
 print(logo)
 
-# 3. create a blank for the number of
+#creating blank spaces
 display = []
 for _ in range(word_length):
     display += "_"
 
 print(display)
 
-# 4. get the input and run the program
+#getting input and checking for the program 
 while not end_of_game:
     guess_letter = input("Guess a letter: ").lower()
 
@@ -53,5 +53,5 @@ while not end_of_game:
     # print the art
     print(stages[lives])
 
-# 5. print the correct word
+#Printing the correct answer
 print(f"Correct word: {chosen_word}")
