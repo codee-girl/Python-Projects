@@ -1,18 +1,13 @@
-
-#importing the required class 
 from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-#creating object of each calss
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 menu = Menu()
 
 is_on = True
 
-
-#program using OOP
 while is_on:
     options = menu.get_items()
     choice = input(f"What would you like? ({options}): ")
