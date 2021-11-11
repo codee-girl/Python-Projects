@@ -9,7 +9,6 @@ else:
     print("Not a palindrome")    
 
 #usine [::-1]):  
-
 string=input(("Enter a string:"))  
 if(string==string[::-1]):  
       print("The letter is a palindrome")  
